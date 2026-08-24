@@ -1,1 +1,34 @@
-$
+/* fonts start */
+
+@font-face {
+    font-family: 'canela';
+    src: url('fonts/CanelaText-Regular-Trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* headlines,quotes, titles, logo, editorial text */
+.canela {
+    font-family: 'canela';
+}
+
+@font-face {
+    font-family: 'canela italic';
+    src: url('fonts/CanelaText-RegularItalic-Trial.otf') format('opentype');
+}
+
+/* small accents, signatures, emphasis, occasional highlights */
+.canela-italic {
+    font-family: 'canela italic';
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+.montserrat {
+    font-family: 'montserrat';
+}
+
+/* fonts end */
