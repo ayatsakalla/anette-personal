@@ -16,37 +16,73 @@
 </head>
 
 <body class="index-body">
-    <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand active canela ivory-veil" href="index.html">
-                <img src="images/iconA/24.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
-                ANETTE ANOKHIN
-            </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- hero wrapper: nav + hero live inside this so nav can sit on top -->
+    <div class="hero-wrapper">
 
-            <div class="collapse navbar-collapse ivory-veil" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto canela ">
-                    <a class="nav-link" href="#">ABOUT</a>
-                    <a class="nav-link" href="#">EXPERIENCES</a>
-                    <a class="nav-link" href="#">RETREATS AND SPEAKING</a>
-                    <a class="nav-link" href="#">JOURNAL</a>
-                    <a class="nav-link inq-btn" href="#">INQUIRE PRIVATELY</a>
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg hero-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand active canela ivory-veil" href="index.html">
+                    <img src="images/iconA/24.png" alt="Logo" width="40" height="34"
+                        class="d-inline-block align-text-top">
+                    ANETTE ANOKHIN
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse ivory-veil" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto canela">
+                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="#">EXPERIENCES</a>
+                        <a class="nav-link" href="#">RETREATS AND SPEAKING</a>
+                        <a class="nav-link" href="#">JOURNAL</a>
+                        <a class="nav-link inq-btn" href="#">INQUIRE PRIVATELY</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- navbar end -->
+        </nav>
+        <!-- navbar end -->
+
+        <!-- hero start -->
+        <section class="hero">
+            <!-- TODO: swap this background image path for your real hero photo -->
+            <div class="hero-bg" style="background-image: url('images/mainPage/FinalpictopBRIGHTER.PNG')"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <h1 class="hero-headline canela ivory-veil">
+                    <!-- TODO: your headline. wrap the emphasized word/phrase in the span below -->
+                    Understanding
+                    <span class="canela-italic antique-gold">your nature</span>
+                    changes the course of your life.
+                </h1>
+
+                <p class="hero-eyebrow montserrat ivory-veil">
+                    <!-- TODO: small label line, e.g. NUMERICAL PSYCHOLOGY • VEDIC FRAMEWORKS • ENERGY FLOW -->
+                    NUMERICAL PSYCHOLOGY <span class="antique-gold">•</span> VEDIC FRAMEWORKS <span
+                        class="antique-gold">•</span> ENERGY FLOW
+                </p>
+
+                <a href="#inquire" class="btn hero-btn red-crimson-bg ivory-veil montserrat">
+                    <!-- TODO: button label -->
+                    INQUIRE PRIVATELY
+                </a>
+            </div>
+        </section>
+        <!-- hero end -->
+
+    </div>
+    <!-- hero-wrapper end -->
 
     <footer>
         <!-- place footer here -->
     </footer>
-
-
 
     <!-- Bootstrap JavaScript Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

@@ -79,3 +79,136 @@ body.index-body {
     background-color: #EBDED2;
 }
 /* body index end */
+
+/* hero + navbar overlay start */
+
+.hero-wrapper {
+    position: relative;
+}
+
+/* pull navbar out of normal flow, sit it on top of hero */
+.hero-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    background-color: transparent;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.hero {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center 20%;
+    z-index: 1;
+}
+
+/* this is the "faded" gradient: solid dark on the left (behind nav/text),
+   fading into the photo on the right. adjust the % stops to taste */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: linear-gradient(to right,
+            #161415 0%,
+            #161415 34%,
+            rgba(22, 20, 21, 0.85) 42%,
+            rgba(22, 20, 21, 0.6) 50%,
+            rgba(22, 20, 21, 0.35) 58%,
+            rgba(22, 20, 21, 0.15) 66%,
+            rgba(22, 20, 21, 0) 76%);
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 620px;
+    padding-left: 2%;
+    padding-top: 6rem;
+}
+
+.hero-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 1rem;
+}
+
+.hero-headline {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.red-crimson-bg {
+    background-color: #6E1F28;
+}
+
+.hero-btn {
+    padding: 0.85rem 2rem;
+    border-radius: 2px;
+    display: inline-block;
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+}
+
+/* responsive: phone screens */
+@media (max-width: 991.98px) {
+    .hero-navbar {
+        position: absolute;
+        /* keep overlay effect on mobile too */
+        background-color: transparent;
+    }
+
+    /* mobile menu itself should NOT be transparent, or links vanish into the photo */
+    .navbar-collapse {
+        background-color: #2B282B;
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 4px;
+    }
+
+    .hero {
+        min-height: 100vh;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-top: 7.5rem;
+        text-align: left;
+    }
+
+    .hero-headline {
+        font-size: 2rem;
+    }
+
+    /* on small screens the gradient needs to cover more of the image
+       so text stays readable regardless of what's in the photo */
+    .hero-overlay {
+        background: linear-gradient(to bottom,
+                rgba(43, 40, 43, 0.9) 0%,
+                rgba(43, 40, 43, 0.75) 50%,
+                rgba(43, 40, 43, 0.55) 100%);
+    }
+}
+
+@media (max-width: 420px) {
+    .hero-headline {
+        font-size: 1.6rem;
+    }
+}
+
+/* hero + navbar overlay end */
