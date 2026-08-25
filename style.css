@@ -60,3 +60,22 @@
     color: #6E1F28;
 }
 /* colors end */
+
+/* navbar index start */
+
+.inq-btn {
+    background-color: #6E1F28;
+    width: fit-content;
+    padding: 1.5%;
+}
+
+.nav-link {
+    color: #F7F3EE;
+}
+/* navbar index end */
+
+/* body index start */
+body.index-body {
+    background-color: #EBDED2;
+}
+/* body index end */
