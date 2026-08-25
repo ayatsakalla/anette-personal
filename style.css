@@ -27,8 +27,36 @@
     src: url('fonts/Montserrat-Light.ttf') format('truetype');
 }
 
+
+/* body, text, captions, navigation, buttons, description */
 .montserrat {
     font-family: 'montserrat';
 }
 
 /* fonts end */
+
+/* colors start */
+.ivory-veil {
+    color: #F7F3EE;
+}
+
+.warm-sand {
+    color: #EBDED2;
+}
+
+.stone-taupe {
+    color: #C6B8A8;
+}
+
+.soft-charcoal {
+    color: #2B282B;
+}
+
+.antique-gold {
+    color: #A8894F;
+}
+
+.red-crimson {
+    color: #6E1F28;
+}
+/* colors end */
