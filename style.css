@@ -211,4 +211,28 @@ body.index-body {
     }
 }
 
+/* mobile phone view of hero img */
+@media (max-width: 991.98px) {
+    .hero-bg {
+        background-position: 85% 15%;
+    }
+}
+
+.hero-headline {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.hero-headline span {
+    display: inline;
+    white-space: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* hero + navbar overlay end */
