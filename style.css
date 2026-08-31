@@ -114,6 +114,39 @@ body {
     overflow-x: hidden;
 }
 
+@media (max-width: 991.98px) {
+
+    /* Prevent hero wrapper horizontal leakage */
+    .hero-wrapper {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Reset bootstrap container negative margins */
+    .hero-navbar .container-fluid {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    /* Center the bottom intro text and remove the desktop right border */
+    .about-text {
+        order: 2;
+        width: 100%;
+        border-right: none !important;
+        padding-right: 0 !important;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* Keep the 3 category columns inside the screen bounds */
+    .about-categories {
+        order: 1;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
 /* Ensure navbar fits strictly within the viewport */
 .hero-navbar {
     position: absolute;
