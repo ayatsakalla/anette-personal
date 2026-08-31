@@ -95,32 +95,47 @@
 body.index-body {
     background-color: #EBDED2;
 }
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+    margin: 0;
+    padding: 0;
+}
 /* body index end */
 
 /* hero + navbar overlay start */
 
 .hero-wrapper {
     position: relative;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-/* pull navbar out of normal flow, sit it on top of hero */
+/* Ensure navbar fits strictly within the viewport */
 .hero-navbar {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 100%;
     z-index: 20;
     background-color: transparent;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+    box-sizing: border-box;
 }
 
+/* Keep hero background within bounds */
 .hero {
     position: relative;
     min-height: 90vh;
     display: flex;
     align-items: center;
     overflow: hidden;
+    width: 100%;
 }
 
 .hero-bg {
