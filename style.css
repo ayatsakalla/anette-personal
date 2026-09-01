@@ -306,6 +306,17 @@ img {
     display: block;
 }
 
+.idk-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.idk-img {
+    width: 75px;
+    height: auto;
+}
+
 /* hero + navbar overlay end */
 
 /* about/intro section start */
