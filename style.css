@@ -114,6 +114,12 @@ body {
     overflow-x: hidden;
 }
 
+.hero-goldBar {
+    width: 20%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 @media (max-width: 991.98px) {
 
     /* Prevent hero wrapper horizontal leakage */
