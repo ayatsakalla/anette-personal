@@ -71,6 +71,15 @@
 
 .nav-link {
     color: #F7F3EE;
+    transition: color 0.25s ease;
+}
+
+.nav-link:hover {
+    color: #A8894F;
+}
+
+a.navbar-brand:hover {
+    color: #A8894F;
 }
 
 @media (max-width: 991.98px) {
