@@ -832,6 +832,18 @@ img {
     color: #C6B8A8;
     font-size: 0.7rem;
 }
+.footer-social-icon svg {
+    stroke: #A8894F;
+    transition: stroke 0.25s ease;
+}
+
+.footer-social-icon:hover svg {
+    stroke: #6E1F28;
+}
+
+.footer-social-icon:hover .footer-social-fill {
+    fill: #6E1F28;
+}
 
 /* responsive: phone screens */
 @media (max-width: 991.98px) {
