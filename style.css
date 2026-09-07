@@ -72,6 +72,7 @@
 .nav-link {
     color: #F7F3EE;
     transition: color 0.25s ease;
+    font-size: 0.8rem;
 }
 
 .nav-link:hover {
@@ -96,6 +97,7 @@ a.navbar-brand:hover {
     .inq-btn {
         margin-top: 0.5rem;
         text-align: center;
+        padding: 1%;
     }
 }
 /* navbar index end */
@@ -241,6 +243,13 @@ body {
     display: inline-block;
     letter-spacing: 0.1em;
     font-size: 0.8rem;
+    transition: color 0.25s ease;
+}
+
+.hero-btn:hover {
+    color: #A8894F;
+    background-color: #6E1F28;
+    border-color: #6E1F28;
 }
 
 /* responsive: phone screens */
@@ -608,6 +617,18 @@ img {
     letter-spacing: 0.08em;
     margin-bottom: 0.4rem;
 }
+
+.footer-brand-name a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #A8894F;
+}
+
+.footer-brand-name a:hover {
+    color: #6E1F28;
+    transition: 0.2s;
+}
+
 
 .footer-brand-tag {
     font-size: 0.65rem;
