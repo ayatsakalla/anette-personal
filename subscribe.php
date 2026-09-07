@@ -10,10 +10,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         mail($to, $subject, $message, $headers);
 
-        header("Location: index.html?subscribed=success");
+        header("Location: index.html?subscribed=success#stay-connected");
         exit();
     } else {
-        header("Location: index.html?subscribed=error");
+        header("Location: index.html?subscribed=error#stay-connected");
         exit();
     }
 }
