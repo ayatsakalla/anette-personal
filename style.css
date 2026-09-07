@@ -954,6 +954,21 @@ img {
     }
 }
 
+#subscribe-message {
+    font-size: 0.75rem;
+    margin-top: 0.75rem;
+    display: none;
+}
+
+#subscribe-message.success {
+    color: #A8894F;
+    display: block;
+}
+
+#subscribe-message.error {
+    color: #6E1F28;
+    display: block;
+}
 /* footer accordion (mobile only) end */
 
 /* footer end */
