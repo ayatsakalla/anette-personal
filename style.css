@@ -235,8 +235,6 @@ body {
     max-width: 100%;
     z-index: 20;
     background-color: transparent;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
     box-sizing: border-box;
 }
 
@@ -1047,3 +1045,273 @@ img {
 }
 
 /* legal pages end */
+
+/* =========================================================
+   ABOUT PAGE
+   ========================================================= */
+
+.about-page .hero-wrapper {
+    position: relative;
+}
+
+
+/* =========================================================
+   DESKTOP HERO
+   ========================================================= */
+
+@media (min-width: 992px) {
+
+    /*
+       FORCE the navbar to sit ON TOP of the hero.
+       This is the important part that was missing.
+    */
+
+    .about-page .hero-navbar {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+
+        background: rgba(22, 20, 21, 0.05);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    }
+
+
+    /*
+       Make the hero begin at the very top of the page,
+       underneath the transparent navbar.
+    */
+
+    .about-page .hero {
+        position: relative;
+        min-height: 90vh;
+        margin-top: 0;
+    }
+
+
+    /*
+       SHIFT ANETTE'S FACE TO THE RIGHT.
+
+       45% moves the image content toward the RIGHT
+       compared with the previous 60%.
+
+       You can later try 40% or 50% if you want to
+       fine-tune it.
+    */
+
+    .about-page .hero-bg {
+        background-position: 10% 40%;
+    }
+
+
+    /*
+       KEEP THE DARK FADE.
+    */
+
+    .about-page .hero-overlay {
+        display: block;
+    }
+
+
+    /*
+       THE MOBILE PORTRAIT MUST NEVER APPEAR ON DESKTOP.
+    */
+
+    .about-page .about-mobile-image {
+        display: none !important;
+    }
+
+
+    /*
+       NAVIGATION NEEDS TO STAY VISIBLE OVER THE IMAGE.
+    */
+
+    .about-page .hero-navbar .nav-link {
+        color: #F5F1E8;
+    }
+
+    .about-page .hero-navbar .nav-link.active {
+        color: #F5F1E8;
+    }
+
+    .about-page .hero-navbar .nav-link:hover {
+        color: #A8894F;
+    }
+
+
+    /*
+       About text.
+    */
+
+    .about-page .hero-content {
+        position: relative;
+        z-index: 5;
+
+        max-width: 680px;
+
+        padding-left: 6%;
+        padding-top: 10rem;
+        padding-bottom: 4rem;
+    }
+
+
+    .about-page .about-copy {
+        max-width: 610px;
+        font-size: 0.82rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 991.98px) {
+
+    /*
+       Mobile navbar remains over the top.
+    */
+
+    .about-page .hero-navbar {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+
+        background: transparent;
+    }
+
+
+    /*
+       No desktop background image on phone.
+    */
+
+    .about-page .hero-bg {
+        display: none !important;
+    }
+
+
+    /*
+       No desktop fade on phone.
+    */
+
+    .about-page .hero-overlay {
+        display: none !important;
+    }
+
+
+    /*
+       Dark mobile hero.
+    */
+
+    .about-page .hero {
+        min-height: 0;
+        display: block;
+        margin-top: 0;
+        background-color: #2B282B;
+    }
+
+
+    /*
+       Mobile content.
+    */
+
+    .about-page .hero-content {
+        max-width: 100%;
+
+        padding-left: 6%;
+        padding-right: 6%;
+
+        padding-top: 7.5rem;
+        padding-bottom: 4rem;
+    }
+
+
+    /*
+       Mobile headline.
+    */
+
+    .about-page .hero-headline {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+    }
+
+
+    /*
+       MOBILE PORTRAIT.
+
+       This is the ONLY place where this image appears
+       as a separate image.
+
+       It sits directly beneath "everyday life."
+    */
+
+    .about-page .about-mobile-image {
+        display: block !important;
+
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+
+        margin: 1.5rem 0 2.25rem;
+
+        object-fit: cover;
+    }
+
+
+    /*
+       About paragraphs.
+    */
+
+    .about-page .about-copy {
+        max-width: 100%;
+
+        font-size: 0.77rem;
+        line-height: 1.7;
+
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .about-page .hero-content {
+        padding-left: 6%;
+        padding-right: 6%;
+
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+    }
+
+
+    .about-page .hero-headline {
+        font-size: 1.6rem;
+        line-height: 1.22;
+    }
+
+
+    .about-page .about-mobile-image {
+        margin-top: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .about-page .about-copy {
+        font-size: 0.73rem;
+        line-height: 1.65;
+    }
+
+}
