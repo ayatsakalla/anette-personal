@@ -878,6 +878,15 @@ img {
     }
 }
 
+.footer-signup button svg {
+    stroke: #A8894F;
+    transition: stroke 0.25s ease;
+}
+
+.footer-signup button:hover svg {
+    stroke: #F7F3EE;
+}
+
 /* footer accordion (mobile only) start */
 
 .footer-accordion-toggle {
