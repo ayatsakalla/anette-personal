@@ -1363,3 +1363,302 @@ img {
     }
 }
 /* about story section end */
+
+/* =========================================================
+   EXPERIENCE PAGE
+   ========================================================= */
+
+.experience-page {
+    background-color: #EBDED2;
+}
+
+/* --- solid cream navbar variant --- */
+
+.exp-navbar {
+    background-color: #EBDED2;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    border-bottom: 1px solid rgba(168, 137, 79, 0.2);
+}
+
+.exp-nav-link {
+    color: #2B282B !important;
+}
+
+.exp-nav-link:hover,
+.exp-nav-link.active {
+    color: #A8894F !important;
+}
+
+.exp-line {
+    background-color: #6E1F28 !important;
+}
+
+/* --- hero --- */
+
+.exp-hero {
+    position: relative;
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.exp-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center 30%;
+    z-index: 1;
+}
+
+/* fades on BOTH sides, per your note */
+.exp-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: linear-gradient(to right,
+            rgba(20, 18, 19, 0.9) 0%,
+            rgba(20, 18, 19, 0.35) 28%,
+            rgba(20, 18, 19, 0) 48%,
+            rgba(20, 18, 19, 0) 62%,
+            rgba(20, 18, 19, 0.55) 85%,
+            rgba(20, 18, 19, 0.9) 100%);
+}
+
+.exp-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 620px;
+    padding: 3rem 6%;
+}
+
+.exp-breadcrumb {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    color: #A8894F;
+    margin-bottom: 1rem;
+}
+
+.exp-hero-title {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+}
+
+.exp-hero-divider {
+    width: 50px;
+    height: 2px;
+    background-color: #A8894F;
+    margin-bottom: 1.5rem;
+}
+
+.exp-hero-copy {
+    font-size: 0.92rem;
+    line-height: 1.8;
+    color: #EBDED2;
+    margin-bottom: 1.5rem;
+}
+
+.exp-hero-worldwide {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: #C6B8A8;
+}
+
+.exp-globe {
+    margin-right: 0.4rem;
+}
+
+/* --- divider row --- */
+
+.exp-divider-row {
+    text-align: center;
+    padding: 2.5rem 6%;
+    background-color: #F7F3EE;
+}
+
+.exp-divider-img {
+    width: clamp(140px, 20vw, 220px);
+    margin: 0 auto;
+}
+
+/* --- service rows --- */
+
+.exp-service {
+    display: flex;
+    align-items: stretch;
+    min-height: 480px;
+}
+
+.exp-service-ivory {
+    background-color: #F7F3EE;
+}
+
+.exp-service-sand {
+    background-color: #EBDED2;
+}
+
+.exp-service-reverse {
+    flex-direction: row-reverse;
+}
+
+.exp-service-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.exp-service-text {
+    flex: 1;
+    padding: 4rem 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.exp-service-num {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+}
+
+.exp-num-line {
+    display: inline-block;
+    width: 32px;
+    height: 1px;
+    background-color: #A8894F;
+}
+
+.exp-service-text h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1.25rem;
+}
+
+.exp-service-text p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 1.1rem;
+}
+
+.exp-italic {
+    font-style: italic;
+    color: #6B6560;
+}
+
+.exp-covers-line {
+    margin-top: 0.5rem;
+}
+
+.exp-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.1rem;
+}
+
+.exp-list li {
+    font-size: 0.9rem;
+    line-height: 1.9;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.exp-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 5px;
+    height: 5px;
+    background-color: #A8894F;
+    border-radius: 50%;
+}
+
+.exp-service-hr {
+    border: none;
+    border-top: 1px solid rgba(168, 137, 79, 0.35);
+    width: 40px;
+    margin: 0.5rem 0 1.25rem;
+}
+
+.exp-inquire-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: #A8894F;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.exp-inquire-link svg {
+    width: 15px;
+    height: 15px;
+    stroke: #A8894F;
+    transition: stroke 0.25s ease;
+}
+
+.exp-inquire-link:hover {
+    color: #6E1F28;
+}
+
+.exp-inquire-link:hover svg {
+    stroke: #6E1F28;
+}
+
+/* --- thick section dividers --- */
+
+.exp-thick-divider {
+    height: 3px;
+    background: linear-gradient(to right, transparent, #A8894F 20%, #A8894F 80%, transparent);
+}
+
+/* --- closing quote section (darker beige, per brand palette) --- */
+
+.exp-quote {
+    background-color: #E3D2BC;
+    text-align: center;
+    padding: 5rem 6%;
+}
+
+.exp-quote-divider {
+    width: clamp(160px, 22vw, 260px);
+    margin: 0 auto 2rem;
+}
+
+.exp-quote p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: #2B282B;
+}
+
+/* --- responsive: phone --- */
+
+@media (max-width: 991.98px) {
+
+    .exp-service,
+    .exp-service-reverse {
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .exp-service-image {
+        order: 1;
+    }
+
+    .exp-service-text {
+        order: 2;
+    }
+
+    .exp-service-image {
+        min-height: 280px;
+    }
+
+    .exp-service-text {
+        padding: 3rem 7%;
+    }
+}
