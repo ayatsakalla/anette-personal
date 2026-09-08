@@ -1101,13 +1101,9 @@ img {
        fine-tune it.
     */
 
-        @media (min-width: 992px) {
-    
-            .about-page .hero-bg {
-                background-position: 0% 20%;
-            }
-    
-        }
+    .about-page .hero-bg {
+        background-position: 5% 40%;
+    }
 
 
     /*
@@ -1182,15 +1178,14 @@ img {
     */
 
     .about-page .hero-navbar {
-            position: absolute !important;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 100;
-            background: rgba(22, 20, 21, 0.05);
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
-        }
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+
+        background: transparent;
+    }
 
 
     /*
@@ -1321,103 +1316,4 @@ img {
 
 }
 
-/* =========================================================
-   ABOUT PAGE DECORATIVE DIVIDER
-   ========================================================= */
-
-.about-page .about-divider {
-    display: block;
-    width: 200px;
-    height: auto;
-    margin-top: 1.25rem;
-    margin-bottom: 1.75rem;
-    object-fit: contain;
-}
-
-
-/* =========================================================
-   MOBILE DIVIDER
-   ========================================================= */
-
-@media (max-width: 991.98px) {
-
-    .about-page .about-divider {
-        width: 150px;
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-    }
-
-}
-
 /* about me hero end */
-
-/* =========================================================
-   ABOUT ME — STORY SECTION
-   ========================================================= */
-
-.about-story {
-    background: #F1E5D8;
-    padding: 7rem 6% 8rem;
-}
-
-.about-story-inner {
-    width: 100%;
-    max-width: 760px;
-    margin: 0 auto;
-}
-
-
-/* Main opening statement */
-
-.about-story-intro {
-    font-family: inherit;
-    font-size: 1.45rem;
-    line-height: 1.55;
-    margin: 0 0 3rem;
-}
-
-
-/* Body paragraphs */
-
-.about-story-inner p {
-    margin: 0 0 2rem;
-    font-size: 1rem;
-    line-height: 1.9;
-}
-
-
-/* Last paragraph */
-
-.about-story-inner p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 991.98px) {
-
-    .about-story {
-        padding: 4.5rem 6% 5rem;
-    }
-
-    .about-story-inner {
-        max-width: 100%;
-    }
-
-    .about-story-intro {
-        font-size: 1.15rem;
-        line-height: 1.55;
-        margin-bottom: 2.25rem;
-    }
-
-    .about-story-inner p {
-        font-size: 0.82rem;
-        line-height: 1.8;
-        margin-bottom: 1.75rem;
-    }
-
-}
-/* about me info end */
