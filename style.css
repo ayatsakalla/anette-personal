@@ -83,6 +83,11 @@ a.navbar-brand:hover {
     color: #A8894F;
 }
 
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #A8894F;
+}
+
 @media (max-width: 991.98px) {
     .navbar-nav {
         display: flex;
@@ -1646,11 +1651,11 @@ img {
         min-height: 0;
     }
 
-    .exp-service-image {
+    .exp-service-02 .exp-service-image {
         order: 1;
     }
-
-    .exp-service-text {
+    
+    .exp-service-02 .exp-service-text {
         order: 2;
     }
 
@@ -1661,4 +1666,14 @@ img {
     .exp-service-text {
         padding: 3rem 7%;
     }
+
+    .exp-nav-link {
+        color: #F7F3EE !important;
+    }
+    
+    .exp-nav-link:hover,
+    .exp-nav-link.active {
+        color: #A8894F !important;
+    }
+
 }
