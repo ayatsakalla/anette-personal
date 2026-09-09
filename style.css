@@ -1677,3 +1677,138 @@ img {
     }
 
 }
+
+/* experience page end */
+
+/* inquiry page start */
+
+.inquiry-hero {
+    background-color: #F7F3EE;
+    padding: 3rem 6% 4rem;
+}
+
+.inquiry-hero-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.inquiry-hero-image {
+    flex: 1 1 300px;
+}
+
+.inquiry-hero-image img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 4px;
+    display: block;
+}
+
+.inquiry-hero-content {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.inquiry-hero-content h1 {
+    font-size: 1.9rem;
+    margin-bottom: 1.25rem;
+}
+
+.inquiry-divider {
+    width: 90px;
+    margin: 1.1rem auto;
+}
+
+.inquiry-intro-text {
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+.inquiry-quote {
+    font-size: 1.15rem;
+    line-height: 1.45;
+}
+
+.inquiry-confidence {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+}
+
+.inquiry-form-wrap {
+    flex: 1 1 300px;
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 10px 40px rgba(43, 40, 43, 0.06);
+}
+
+.inquiry-field {
+    margin-bottom: 1rem;
+}
+
+.inquiry-field input,
+.inquiry-field select,
+.inquiry-field textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1px solid rgba(168, 137, 79, 0.4);
+    border-radius: 2px;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    color: #2B282B;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.inquiry-field input::placeholder,
+.inquiry-field textarea::placeholder {
+    color: #A8894F;
+}
+
+.inquiry-field select {
+    color: #A8894F;
+}
+
+.inquiry-field textarea {
+    resize: vertical;
+}
+
+.inquiry-submit {
+    width: 100%;
+    background-color: #6E1F28;
+    color: #F7F3EE;
+    border: none;
+    padding: 0.85rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.inquiry-submit:hover {
+    background-color: #58171f;
+}
+
+#inquiry-message {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    text-align: center;
+    display: none;
+}
+
+#inquiry-message.success {
+    color: #A8894F;
+    display: block;
+}
+
+#inquiry-message.error {
+    color: #6E1F28;
+    display: block;
+}
+
+/* inquiry page end */
