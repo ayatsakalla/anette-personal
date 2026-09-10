@@ -2260,3 +2260,273 @@ img {
 }
 
 /* retreats closing cta end */
+
+/* journal page start */
+
+.journal-header {
+    background-color: #F7F3EE;
+    text-align: center;
+    padding: 4rem 6% 1rem;
+}
+
+.journal-header h1 {
+    font-size: 3rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+}
+
+.journal-header img,
+.journal-connect-inner img {
+    display: block;
+    margin: 0 auto;
+}
+
+.journal-header-divider {
+    width: 60px;
+    height: 1px;
+    background-color: #A8894F;
+    margin: 0 auto 1.5rem;
+}
+
+.journal-header p {
+    font-size: 1.1rem;
+}
+
+.journal-carousel-section {
+    background-color: #F7F3EE;
+    padding: 3rem 6% 2rem;
+}
+
+.journal-carousel-centered {
+    justify-content: center;
+}
+
+.journal-carousel-wrap {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.journal-carousel {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    flex: 1;
+}
+
+.journal-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.journal-card {
+    flex: 0 0 calc(33.333% - 1.34rem);
+    scroll-snap-align: start;
+    background-color: #EFE6DA;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.journal-card-image {
+    width: 100%;
+    height: 220px;
+}
+
+.journal-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.journal-card-body {
+    padding: 1.75rem;
+}
+
+.journal-card-body h3 {
+    font-size: 1.3rem;
+    line-height: 1.35;
+    margin-bottom: 0.9rem;
+}
+
+.journal-card-divider {
+    width: 40px;
+    height: 1px;
+    background-color: #A8894F;
+    margin-bottom: 1rem;
+}
+
+.journal-card-body p {
+    font-size: 0.85rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+}
+
+.journal-card-link {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: #A8894F;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.journal-card-link:hover {
+    color: #6E1F28;
+}
+
+.journal-nav {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(168, 137, 79, 0.4);
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.journal-nav svg {
+    width: 18px;
+    height: 18px;
+}
+
+.journal-header~* .container-fluid,
+body .navbar .container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .journal-nav {
+        display: none;
+    }
+
+    .journal-carousel-wrap {
+        gap: 0;
+    }
+
+    .journal-card {
+        flex: 0 0 92%;
+    }
+
+    .journal-carousel-centered {
+        justify-content: flex-start;
+    }
+}
+/* stay connected */
+
+.journal-connect {
+    background-color: #F7F3EE;
+    padding: 0 6% 5rem;
+}
+
+.journal-connect-inner {
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: #EFE6DA;
+    border: 1px solid rgba(168, 137, 79, 0.3);
+    border-radius: 4px;
+    text-align: center;
+    padding: 3rem 2.5rem;
+}
+
+.journal-connect-dot {
+    width: 5px;
+    height: 5px;
+    background-color: #A8894F;
+    border-radius: 50%;
+    margin: 0 auto 1.25rem;
+}
+
+.journal-connect-inner h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+
+.journal-connect-inner p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+}
+
+.journal-connect-form {
+    display: flex;
+    max-width: 420px;
+    margin: 0 auto;
+    border: 1px solid rgba(168, 137, 79, 0.4);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.journal-connect-form input {
+    flex: 1;
+    border: none;
+    padding: 0.85rem 1rem;
+    font-size: 0.85rem;
+    background-color: #F7F3EE;
+}
+
+.journal-connect-form button {
+    background-color: #A8894F;
+    border: none;
+    padding: 0 1.2rem;
+    cursor: pointer;
+}
+
+.journal-connect-form button svg {
+    width: 16px;
+    height: 16px;
+}
+
+#journal-subscribe-message {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    display: none;
+}
+
+#journal-subscribe-message.success {
+    color: #A8894F;
+    display: block;
+}
+
+#journal-subscribe-message.error {
+    color: #6E1F28;
+    display: block;
+}
+
+.journal-connect-privacy {
+    font-size: 0.82rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0;
+}
+
+/* responsive: phone screens */
+@media (max-width: 991.98px) {
+    .journal-header h1 {
+        font-size: 2rem;
+    }
+
+    .journal-card {
+        flex: 0 0 85%;
+    }
+
+    .journal-connect-inner {
+        padding: 2.5rem 1.5rem;
+    }
+}
+
+/* journal page end */

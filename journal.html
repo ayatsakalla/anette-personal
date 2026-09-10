@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Journal | Anette Anokhin</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="images/iconA/24.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="index-body">
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg" style="position: static; background-color: #F7F3EE;">
+        <div class="container-fluid">
+            <a class="navbar-brand active canela idk-edit" href="index.html">
+                <img src="images/iconA/24.png" alt="Logo" width="46" height="40"
+                    class="d-inline-block align-text-top idk-img">
+                ANETTE ANOKHIN
+            </a>
+
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-line line1"></span>
+                <span class="toggler-line line2"></span>
+                <span class="toggler-line line3"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto montserrat fw-bold">
+                    <a class="nav-link exp-nav-link" href="aboutme.html">ABOUT</a>
+                    <a class="nav-link exp-nav-link" href="experience.html">EXPERIENCES</a>
+                    <a class="nav-link exp-nav-link" href="retreats.html">RETREATS &amp; SPEAKING</a>
+                    <a class="nav-link exp-nav-link active" href="journal.html">JOURNAL</a>
+                    <a class="nav-link inq-btn" href="inquiry.html">INQUIRE PRIVATELY</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- journal header start -->
+    <section class="journal-header">
+        <h1 class="canela soft-charcoal">JOURNAL</h1>
+        <img src="images/logoFiles/13.png" class="w-25">
+        <p class="canela-italic soft-charcoal">Human nature, universal principles, and timeless wisdom.</p>
+    </section>
+    <!-- journal header end -->
+
+    <!-- journal carousel start -->
+    <section class="journal-carousel-section">
+        <div class="journal-carousel-wrap">
+            <button class="journal-nav journal-nav-prev" aria-label="Previous article">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#A8894F" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6" />
+                </svg>
+            </button>
+
+            <div class="journal-carousel" id="journalCarousel">
+                <!-- cards injected here by script.js -->
+            </div>
+
+            <button class="journal-nav journal-nav-next" aria-label="Next article">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#A8894F" stroke-width="2">
+                    <path d="M9 18l6-6-6-6" />
+                </svg>
+            </button>
+        </div>
+    </section>
+    <!-- journal carousel end -->
+
+    <!-- stay connected start -->
+    <section class="journal-connect">
+        <div class="journal-connect-inner">
+            <h2 class="canela soft-charcoal">Stay Connected</h2>
+            <img src="images/logoFiles/13.png" class="w-25">
+            <p class="montserrat soft-charcoal">
+                Receive occasional reflections, insights, and timeless wisdom directly in your inbox.
+            </p>
+
+            <form class="journal-connect-form" action="subscribe.php" method="POST">
+                <input type="email" name="email" placeholder="Your email address" class="montserrat" required>
+                <button type="submit" aria-label="Subscribe">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#F7F3EE" stroke-width="2">
+                        <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                </button>
+            </form>
+
+            <p id="journal-subscribe-message" class="montserrat"></p>
+
+            <p class="journal-connect-privacy canela-italic soft-charcoal">Your privacy is always respected.</p>
+        </div>
+    </section>
+    <!-- stay connected end -->
+
+    <!-- footer start -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+
+            <div class="footer-col footer-brand">
+                <div class="footer-logo-row">
+                    <img src="images/iconA/24.png" alt="Anette Anokhin logo" class="footer-logo-img">
+                    <div class="footer-brand-text">
+                        <span class="footer-brand-name canela antique-gold">
+                            <a href="index.html">ANETTE ANOKHIN</a>
+                        </span>
+                        <span class="footer-brand-tag montserrat ivory-veil">NUMERICAL PSYCHOLOGY</span>
+                        <span class="footer-brand-tag montserrat ivory-veil">VEDIC FRAMEWORKS</span>
+                        <span class="footer-brand-tag montserrat ivory-veil">ENERGY FLOW</span>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/anette.anokhin/" target="new" aria-label="Instagram"
+                        class="footer-social-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                            <rect x="2" y="2" width="20" height="20" rx="5" />
+                            <circle cx="12" cy="12" r="4" />
+                            <circle cx="17.5" cy="6.5" r="1" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aneta-anokhin-2aa7685/" target="new" aria-label="LinkedIn"
+                        class="footer-social-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                            <rect x="2" y="2" width="20" height="20" rx="3" />
+                            <line x1="7" y1="10" x2="7" y2="17" />
+                            <circle cx="7" cy="6.5" r="1" class="footer-social-fill" stroke="none" />
+                            <path d="M11 17v-4.5c0-1.5 1-2.5 2.5-2.5s2.5 1 2.5 2.5V17" />
+                            <line x1="11" y1="10" x2="11" y2="17" />
+                        </svg>
+                    </a>
+                    <a href="mailto:an@anetteanokhin.com" aria-label="Email" class="footer-social-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="M2 6l10 7 10-7" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer-contact montserrat">
+                    <p><span class="antique-gold">📍</span> NEW YORK, NY</p>
+                    <p><span class="antique-gold">🌐</span> PRIVATE CLIENTS WORLDWIDE</p>
+                    <p><span class="antique-gold">📞</span> +1 917 270 8884</p>
+                </div>
+            </div>
+
+            <div class="footer-col footer-accordion">
+                <button class="footer-heading footer-accordion-toggle canela antique-gold" aria-expanded="false">
+                    QUICK LINKS
+                    <svg class="footer-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="#A8894F"
+                        stroke-width="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+                <ul class="footer-links montserrat footer-accordion-content">
+                    <li><a href="aboutme.html">About</a></li>
+                    <li><a href="experience.html">Experiences</a></li>
+                    <li><a href="retreats.html">Retreats &amp; Speaking</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="inquiry.html">Inquire Privately</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-accordion">
+                <button class="footer-heading footer-accordion-toggle canela antique-gold" aria-expanded="false">
+                    EXPERIENCES
+                    <svg class="footer-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="#A8894F"
+                        stroke-width="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+                <ul class="footer-links montserrat footer-accordion-content">
+                    <li><a href="experience.html#private-consultations">Private Consultations</a></li>
+                    <li><a href="experience.html#12-week-guidance">12-Week Guidance</a></li>
+                    <li><a href="experience.html#private-advisory">Private Advisory</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-newsletter" id="stay-connected">
+                <h4 class="footer-heading canela antique-gold">STAY CONNECTED</h4>
+                <p class="montserrat ivory-veil footer-newsletter-text">
+                    Reflections, insights, and timeless wisdom for living with greater clarity and purpose.
+                </p>
+                <form class="footer-signup" action="subscribe.php" method="POST">
+                    <input type="email" name="email" placeholder="Your email address" class="montserrat" required>
+                    <button type="submit" aria-label="Subscribe">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                            <path d="M5 12h14M13 6l6 6-6 6" />
+                        </svg>
+                    </button>
+                </form>
+                <p id="subscribe-message" class="montserrat"></p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom montserrat">
+            <p>© 2026 ANETTE ANOKHIN. ALL RIGHTS RESERVED.</p>
+            <div class="footer-legal">
+                <a href="privacy.html">PRIVACY POLICY</a>
+                <span>|</span>
+                <a href="terms.html">TERMS &amp; CONDITIONS</a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
