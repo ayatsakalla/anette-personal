@@ -2037,3 +2037,226 @@ img {
 }
 
 /* retreats intro section end */
+
+/* ways to work together start */
+
+.ways-together {
+    background-color: #F7F3EE;
+    padding: 1rem 6% 6rem;
+}
+
+.ways-together-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 500px;
+    margin: 0 auto 3.5rem;
+}
+
+.ways-together-line {
+    flex: 1;
+    height: 1px;
+    background-color: rgba(168, 137, 79, 0.4);
+}
+
+.ways-together-header h2 {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.ways-together-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ways-card {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid rgba(168, 137, 79, 0.2);
+    padding-bottom: 2rem;
+}
+
+.ways-card-image {
+    width: 100%;
+    height: 260px;
+}
+
+.ways-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ways-card-icon {
+    width: 40px;
+    height: 40px;
+    margin: 1.75rem auto 0.5rem 2rem;
+}
+
+.ways-card-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.ways-card h3 {
+    font-size: 1.3rem;
+    line-height: 1.35;
+    margin: 1rem 2rem 1rem;
+}
+
+.ways-card p {
+    font-size: 0.88rem;
+    line-height: 1.8;
+    margin: 0 2rem 1.25rem;
+}
+
+.ways-card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 2rem 1.75rem;
+}
+
+.ways-card-list li {
+    font-size: 0.85rem;
+    line-height: 1.9;
+    padding-left: 1.1rem;
+    position: relative;
+}
+
+.ways-card-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 5px;
+    height: 5px;
+    background-color: #A8894F;
+    border-radius: 50%;
+}
+
+.ways-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: 2rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: #A8894F;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.ways-card-link:hover {
+    color: #6E1F28;
+}
+
+/* responsive: phone screens */
+@media (max-width: 991.98px) {
+    .ways-together {
+        padding: 1rem 7% 4rem;
+    }
+
+    .ways-together-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .ways-card-image {
+        height: 200px;
+    }
+
+    .ways-card h3 {
+        font-size: 1.15rem;
+    }
+}
+
+/* retreats closing cta start */
+
+.retreats-cta {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.retreats-cta-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center 40%;
+    z-index: 1;
+}
+
+.retreats-cta-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: radial-gradient(ellipse at center,
+                rgba(20, 18, 19, 0.75) 0%,
+                rgba(20, 18, 19, 0.6) 40%,
+                rgba(20, 18, 19, 0.4) 100%);
+}
+
+.retreats-cta-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    max-width: 640px;
+    padding: 3rem 6%;
+}
+
+.retreats-cta-content h2 {
+    font-size: 2rem;
+    line-height: 1.35;
+    margin-bottom: 1.25rem;
+}
+
+.retreats-cta-divider {
+    width: 170px;
+    margin: 0 auto 1.5rem;
+    display: block;
+}
+
+.retreats-cta-content p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.retreats-cta-btn {
+    padding: 0.85rem 2.5rem;
+    border-radius: 2px;
+    display: inline-block;
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+    transition: color 0.25s ease;
+}
+
+.retreats-cta-btn:hover {
+    color: #A8894F;
+    background-color: #6E1F28;
+    border-color: #6E1F28;
+}
+
+/* responsive: phone screens */
+@media (max-width: 991.98px) {
+    .retreats-cta {
+        min-height: 60vh;
+    }
+
+    .retreats-cta-content h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* retreats closing cta end */
