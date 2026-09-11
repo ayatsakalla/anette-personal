@@ -197,9 +197,11 @@ body {
 }
 
 .hero-goldBar {
-    width: 20%;
+    width: 15%;
+    height: 2px;
+    background-color: #A8894F;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
 }
 
 @media (max-width: 991.98px) {
@@ -223,7 +225,7 @@ body {
         width: 100%;
         border-right: none !important;
         padding-right: 0 !important;
-        text-align: center;
+        text-align: left;
         margin: 0 auto;
     }
 
@@ -272,13 +274,12 @@ body {
     inset: 0;
     z-index: 2;
     background: linear-gradient(to right,
-            #161415 0%,
-            #161415 34%,
-            rgba(22, 20, 21, 0.85) 42%,
-            rgba(22, 20, 21, 0.6) 50%,
-            rgba(22, 20, 21, 0.35) 58%,
-            rgba(22, 20, 21, 0.15) 66%,
-            rgba(22, 20, 21, 0) 76%);
+            rgba(43, 40, 43, 0.75) 0%,
+            rgba(43, 40, 43, 0.65) 30%,
+            rgba(43, 40, 43, 0.45) 45%,
+            rgba(43, 40, 43, 0.2) 58%,
+            rgba(43, 40, 43, 0.05) 70%,
+            rgba(43, 40, 43, 0) 82%);
 }
 
 
@@ -352,7 +353,6 @@ body {
     .hero-headline {
         font-size: 2rem;
     }
-
     /* on small screens the gradient needs to cover more of the image
        so text stays readable regardless of what's in the photo */
     .hero-overlay {
@@ -419,7 +419,6 @@ img {
     gap: 4rem;
     max-width: 1300px;
     margin: 0 auto;
-    font-weight: bold;
 }
 
 .about-text {
@@ -427,7 +426,7 @@ img {
     order: 1;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     border-right: 1px solid rgba(168, 137, 79, 0.35);
     padding-right: 3rem;
 }
@@ -436,6 +435,7 @@ img {
     font-size: 1.05rem;
     line-height: 1.9;
     margin: 0;
+    font-style: italic;
 }
 
 .about-categories {
@@ -524,6 +524,10 @@ img {
         font-size: 0.68rem;
         line-height: 1.5;
     }
+
+    .about-text {
+        text-align: center;
+    }
 }
 
 @media (max-width: 420px) {
@@ -546,6 +550,81 @@ img {
 }
 
 /* about/intro section end */
+
+/* what you leave with section start */
+
+.leave-with-section {
+    background-color: #2B282B;
+    padding: 4rem 6%;
+    text-align: center;
+}
+
+.leave-with-label {
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 2.5rem;
+}
+
+.leave-with-grid {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    border: 1px solid rgba(168, 137, 79, 0.35);
+}
+
+.leave-with-card {
+    flex: 1;
+    padding: 2.5rem 1.75rem;
+    border-left: 1px solid rgba(168, 137, 79, 0.35);
+}
+
+.leave-with-card:first-child {
+    border-left: none;
+}
+
+.leave-with-icon {
+    width: 26px;
+    height: auto;
+    margin: 0 auto 1.25rem;
+    display: block;
+}
+
+.leave-with-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.leave-with-card p {
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+
+.leave-with-quote {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* responsive: phone screens */
+@media (max-width: 991.98px) {
+    .leave-with-section {
+        padding: 3rem 7%;
+    }
+
+    .leave-with-grid {
+        flex-direction: column;
+    }
+
+    .leave-with-card {
+        border-left: none;
+        border-top: 1px solid rgba(168, 137, 79, 0.35);
+        padding: 2rem 1.5rem;
+    }
+
+    .leave-with-card:first-child {
+        border-top: none;
+    }
+}
+/* what you leave with section end */
 
 /* quote banner section start */
 
@@ -641,6 +720,12 @@ img {
 /* quote banner section end */
 
 /* footer start */
+.globe-icon {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+}
 
 .site-footer {
     background-color: #2B282B;
@@ -1456,7 +1541,7 @@ img {
 }
 
 .exp-hero-divider {
-    width: 50px;
+    width: 15%;
     height: 2px;
     background-color: #A8894F;
     margin-bottom: 1.5rem;
@@ -1556,6 +1641,7 @@ img {
 .exp-italic {
     font-style: italic;
     color: #6B6560;
+    font-size: 0.7rem !important;
 }
 
 .exp-covers-line {
@@ -1716,7 +1802,7 @@ img {
 }
 
 .inquiry-divider {
-    width: 90px;
+    width: 170px;
     margin: 1.1rem auto;
 }
 
@@ -1852,12 +1938,12 @@ img {
     inset: 0;
     z-index: 2;
     background: linear-gradient(to right,
-            #161415 0%,
-            #161415 22%,
-            rgba(22, 20, 21, 0.7) 32%,
-            rgba(22, 20, 21, 0.35) 42%,
-            rgba(22, 20, 21, 0.1) 52%,
-            rgba(22, 20, 21, 0) 62%);
+                rgba(43, 40, 43, 0.75) 0%,
+                rgba(43, 40, 43, 0.65) 22%,
+                rgba(43, 40, 43, 0.45) 32%,
+                rgba(43, 40, 43, 0.2) 42%,
+                rgba(43, 40, 43, 0.05) 52%,
+                rgba(43, 40, 43, 0) 62%);
 }
 
 .retreats-hero-content {
@@ -1875,7 +1961,7 @@ img {
 }
 
 .retreats-hero-divider {
-    width: 50px;
+    width: 15%;
     height: 2px;
     background-color: #A8894F;
     margin-bottom: 1.25rem;
@@ -1992,7 +2078,7 @@ img {
 }
 
 .retreats-intro-divider {
-    width: 90px;
+    width: 150px;
     margin-bottom: 1.5rem;
     display: block;
 }
@@ -2158,6 +2244,14 @@ img {
     color: #6E1F28;
 }
 
+.ways-together-grid .ways-card:nth-child(1) .ways-card-image img {
+    object-position: center 65%;
+}
+
+.ways-together-grid .ways-card:nth-child(2) .ways-card-image img {
+    object-position: center 15%;
+}
+
 /* responsive: phone screens */
 @media (max-width: 991.98px) {
     .ways-together {
@@ -2223,7 +2317,7 @@ img {
 
 .retreats-cta-divider {
     width: 170px;
-    margin: 0 auto 1.5rem;
+    margin: 1rem auto 1rem;
     display: block;
 }
 
@@ -2278,7 +2372,7 @@ img {
 .journal-header img,
 .journal-connect-inner img {
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto 1rem;
 }
 
 .journal-header-divider {
@@ -2411,9 +2505,6 @@ body {
 }
 
 @media (max-width: 991.98px) {
-    .journal-nav {
-        display: none;
-    }
 
     .journal-carousel-wrap {
         gap: 0;
@@ -2425,6 +2516,12 @@ body {
 
     .journal-carousel-centered {
         justify-content: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .journal-nav {
+        display: none;
     }
 }
 /* stay connected */
