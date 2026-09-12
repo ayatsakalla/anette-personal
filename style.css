@@ -197,7 +197,7 @@ body {
 }
 
 .hero-goldBar {
-    width: 15%;
+    width: 50px;
     height: 2px;
     background-color: #A8894F;
     margin-top: 1rem;
@@ -1541,7 +1541,7 @@ img {
 }
 
 .exp-hero-divider {
-    width: 15%;
+    width: 50px;
     height: 2px;
     background-color: #A8894F;
     margin-bottom: 1.5rem;
@@ -1961,7 +1961,7 @@ img {
 }
 
 .retreats-hero-divider {
-    width: 15%;
+    width: 50px;
     height: 2px;
     background-color: #A8894F;
     margin-bottom: 1.25rem;
