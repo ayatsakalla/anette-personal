@@ -58,8 +58,9 @@ if (journalCarousel) {
                     <div class="journal-card-body">
                         <h3 class="canela soft-charcoal">${article.title}</h3>
                         <div class="journal-card-divider"></div>
+                        <p class="montserrat soft-charcoal">${article.description}</p>
                         <a href="${article.link}" target="_blank" rel="noopener" class="journal-card-link montserrat">
-                            READ HERE →
+                            READ MORE →
                         </a>
                     </div>
                 `;

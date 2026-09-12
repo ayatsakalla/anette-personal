@@ -543,10 +543,6 @@ img {
     .about-category h3 {
         font-size: 0.6rem;
     }
-
-    .about-category p {
-        display: none;
-    }
 }
 
 /* about/intro section end */
@@ -725,6 +721,14 @@ img {
     height: 14px;
     vertical-align: middle;
     margin-right: 0.3rem;
+}
+
+.footer-contact-icon {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 0.4rem;
+    flex-shrink: 0;
 }
 
 .site-footer {
@@ -2429,6 +2433,10 @@ img {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+.journal-card-image img {
+    object-position: center 80%;
 }
 
 .journal-card-body {
