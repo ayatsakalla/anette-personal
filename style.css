@@ -1285,6 +1285,10 @@ img {
         background: transparent;
     }
 
+    .red-thing {
+        color: #58171f !important;
+    }
+
 
     /*
        No desktop background image on phone.
@@ -1312,7 +1316,7 @@ img {
         min-height: 0;
         display: block;
         margin-top: 0;
-        background-color: #2B282B;
+        background-color: #C6B8A8;
     }
 
 
@@ -1327,7 +1331,6 @@ img {
         padding-right: 6%;
 
         padding-top: 7.5rem;
-        padding-bottom: 4rem;
     }
 
 
