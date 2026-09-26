@@ -2631,3 +2631,134 @@ body {
 }
 
 /* journal page end */
+
+/* article page start */
+
+.article-hero {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+}
+
+.article-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.article-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(43, 40, 43, 0.65) 0%,
+            rgba(43, 40, 43, 0.3) 60%,
+            rgba(43, 40, 43, 0) 100%);
+}
+
+.article-body {
+    background-color: #F7F3EE;
+    padding: 3rem 6% 5rem;
+}
+
+.article-body-inner {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.article-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.75rem;
+}
+
+.article-body-inner h1 {
+    font-size: 2.3rem;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+
+.article-subtitle {
+    font-size: 1.05rem;
+    color: #6B6560;
+    margin-bottom: 1.5rem;
+}
+
+.article-divider {
+    width: 50px;
+    height: 1px;
+    background-color: #A8894F;
+    margin: 1.5rem 0;
+}
+
+.article-content h2 {
+    font-size: 1.35rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.article-content p {
+    font-size: 0.95rem;
+    line-height: 1.9;
+    margin-bottom: 1.25rem;
+}
+
+.article-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.article-list li {
+    font-size: 0.95rem;
+    line-height: 1.85;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba(168, 137, 79, 0.25);
+}
+
+.article-list li:first-child {
+    padding-top: 0;
+}
+
+.article-closing {
+    font-size: 0.85rem;
+    line-height: 1.8;
+    margin-top: 2rem;
+}
+
+.article-cta {
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.article-cta a {
+    color: #A8894F;
+    text-decoration: underline;
+}
+
+.back-jrl-btn {
+    background: #6E1F28;
+    padding: 2%;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.back-jrl-btn a {
+    text-decoration: none;
+}
+
+.back-jrl-btn a:hover {
+    color: #E3D2BC;
+}
+
+@media (max-width: 991.98px) {
+    .article-hero {
+        height: 220px;
+    }
+
+    .article-body-inner h1 {
+        font-size: 1.7rem;
+    }
+}
+
+/* article page end */
